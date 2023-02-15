@@ -161,6 +161,13 @@ my default method which shows a pop up with ok/cancel that goes back 1 page sayi
 
 # Q&A and you're issues or problems with this here
 
+- Will you update this more?
+
+Yes in the future when I have time; like sound alerts or having it show how many pop ups in the gui instead,
+think the pop counter resets on refresh so i'll have to change that, maybe remote alerts.
+  plan on making more scripts as well, for example my kid has a bad habbit of stairing at the shedule instead of clicking on a class,
+  so later you'll find a script that kicks them into class etc etc :) happy schooling!
+
 - I would instead get more materials for the kid to learn on their own instead of limiting the progress.
 
 yes, we provide as much as we can after school for study, teacher can only come back to the kids screen so often to say stop rushing and skipping. if i sit there the whole time it would just become worse or start something. this is meant for kids who mostly are just in there room alone with a school chromebook, mine isnt lol teacher behind a pc with 30 kids aint enough to watch mine and a lil click of stop sharing is all it takes, i seen in class though all the other kids are in a bed room with the door shut. many tasks will mark complete even if you are in a click click next done kinda mood, schools not done til 3:30 why are you done at noon? well I got all my stars............ 
