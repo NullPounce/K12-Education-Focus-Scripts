@@ -1,0 +1,54 @@
+// ==UserScript==
+// @name         URL Change Alert
+// @namespace    https://github.com/NullPounce
+// @version      1.0
+// @description  Alerts the user if they change URLs 2 times within ten seconds. If there have been 5 popups, a non-closeable popup is displayed for 15 seconds.
+// @author       NullPounce
+// @match        *://*/*
+// @grant        none
+// ==/UserScript==
+let popupCounter = 0;
+let uncloseablePopup;
+let urlChanges = 0;
+let lastUrl = window.location.href;
+
+setInterval(function() {
+    if (window.location.href !== lastUrl) {
+        urlChanges++;
+        lastUrl = window.location.href;
+        if (urlChanges >= 2) {
+            popupCounter++;
+            if (popupCounter === 5) {
+                if (!uncloseablePopup) {
+                    uncloseablePopup = document.createElement('div');
+                    uncloseablePopup.textContent = '⌚️Time-Out: You are lucky to be doing school at Home on a computer💻. Wait longer before changing pages.';
+                    uncloseablePopup.style.position = 'fixed';
+                    uncloseablePopup.style.top = '0';
+                    uncloseablePopup.style.left = '0';
+                    uncloseablePopup.style.width = '100%';
+                    uncloseablePopup.style.height = '100%';
+                    uncloseablePopup.style.display = 'flex';
+                    uncloseablePopup.style.justifyContent = 'center';
+                    uncloseablePopup.style.alignItems = 'center';
+                    uncloseablePopup.style.backgroundColor = '#ffffff';
+                    uncloseablePopup.style.zIndex = 999999;
+                    document.body.appendChild(uncloseablePopup);
+                    setTimeout(() => {
+                        document.body.removeChild(uncloseablePopup);
+                        uncloseablePopup = null;
+                        popupCounter = 0;
+                    }, 15000);
+                }
+            } else {
+                let result = confirm('🤖 You are changing pages too fast. Please slow down and focus 🧠💪');
+                console.log('Popup displayed ' + popupCounter + ' times.');
+                if (!result) {
+                    urlChanges = 0;
+                }
+            }
+            urlChanges = 0;
+        }
+    } else {
+        urlChanges = 0;
+    }
+}, 5000);

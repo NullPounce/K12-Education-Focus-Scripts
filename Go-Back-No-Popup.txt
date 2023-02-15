@@ -1,0 +1,58 @@
+// ==UserScript==
+// @name         URL Change Alert
+// @namespace    https://github.com/NullPounce
+// @version      1.0
+// @description  goes back one page without notice if the user changes urls twice witin 10 seconds.
+// @author       Your Name
+// @match        *://*/*
+// @grant        none
+// ==/UserScript==
+let urlChanges = 0;
+let lastUrl = window.location.href;
+let timerId;
+
+setInterval(function() {
+    if (window.location.href !== lastUrl) {
+        urlChanges++;
+        lastUrl = window.location.href;
+        if (urlChanges >= 2) {
+            let popup = document.createElement('div');
+            popup.textContent = 'You have changed URLs 2 times within 10 seconds. You will be redirected to the previous page in 3 seconds...';
+            popup.style.position = 'fixed';
+            popup.style.bottom = '50px';
+            popup.style.left = '50%';
+            popup.style.transform = 'translate(-50%, 0)';
+            popup.style.backgroundColor = 'white';
+            popup.style.padding = '10px';
+            document.body.appendChild(popup);
+
+            let closePopup = function() {
+                popup.parentNode.removeChild(popup);
+                clearInterval(timerId);
+            };
+
+            timerId = setInterval(function() {
+                closePopup();
+                history.back();
+                urlChanges = 0;
+            }, 3000);
+
+            popup.addEventListener('click', function() {
+                closePopup();
+                history.back();
+                urlChanges = 0;
+            });
+        }
+    } else {
+        urlChanges = 0;
+        if (!timerId) {
+            timerId = setTimeout(function() {
+                urlChanges = 0;
+                timerId = null;
+            }, 10000);
+        }
+    }
+}, 5000);
+
+
+
