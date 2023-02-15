@@ -157,6 +157,38 @@ my default method which shows a pop up with ok/cancel that goes back 1 page sayi
 
 
 
+
+
+# Q&A and you're issues or problems with this here
+
+- I would instead get more materials for the kid to learn on their own instead of limiting the progress.
+
+yes, we provide as much as we can after school for study, teacher can only come back to the kids screen so often to say stop rushing and skipping. if i sit there the whole time it would just become worse or start something. this is meant for kids who mostly are just in there room alone with a school chromebook, mine isnt lol teacher behind a pc with 30 kids aint enough to watch mine and a lil click of stop sharing is all it takes, i seen in class though all the other kids are in a bed room with the door shut. many tasks will mark complete even if you are in a click click next done kinda mood, schools not done til 3:30 why are you done at noon? well I got all my stars............ 
+
+
+- You need to encourage and challenge them, not discourage and bore them.
+
+against school rules for the parent to sit with the child during online school in some schools, can be in the same room of course. great idea i'll add a simple math problem inside the alert haha (too much), i've already removed the given answers on my kids school so we cant cheat here and made many emojis fall down the screen on correct answers. they have these chrome mascot addons that have health bars that change if you do certain things as a fun motivational incentive.
+
+
+- This seems like a great way to stop them from learning anything
+
+Ha how? what child can read a whole paragraph let alone a sentence on each page in under 10 seconds, the on screen reader button takes just as long, you reading every page you wont even notice like what.
+
+
+- What are their grades? If they are "rushing" through the homework and scoring good grades, maybe they are just smart. Putting a time governor on them would only hurt, not help.
+
+On the other hand, if they are not getting good grades and have trouble focusing, this might help. I'm not an educator or child development expert, so I don't really know.
+
+
+don't expect a parent having a kid with good grades using this script, i've noticed the kid reading more of each page and grades have improved just over a week of use, this may not be for all I highly agree. Ha this post got banned just because people don't agree with it, okay so what it works on my kid and the teacher put it on kids chrome books who have a rushing problem and their grades are better too, don't like it don't use it lol these people.
+
+
+- A script that just times how fast you change pages doesn't motivate to read more careful but to click slower and spend the waiting time doing something else.
+
+
+depends on the kid, designed to show a alert on 2 url changes within 10 seconds and even then it gives you leeway then a timetable full screen pop up, works on like 20 something different kids with a rushing problem
+
 # credits
 
 - icon
