@@ -1,4 +1,4 @@
-![GitHub Repo stars](https://img.shields.io/github/stars/NullPounce/K12-Education-Focus-Scripts?style=social) 
+![GitHub Repo stars](https://img.shields.io/github/stars/NullPounce/K12-Education-Focus-Scripts?style=social)
 ![GitHub all releases](https://img.shields.io/github/downloads/NullPounce/K12-Education-Focus-Scripts/total) 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FNullPounce%2FK12-Education-Focus-Scripts&count_bg=%237E2676&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/NullPounce/K12-Education-Focus-Scripts) 
