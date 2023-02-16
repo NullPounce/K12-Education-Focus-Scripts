@@ -52,13 +52,67 @@ setInterval(function() {
                     }, 15000);
                 }
             } else {
-                let result = confirm('🤖 You are changing pages too fast. Please slow down and focus 🧠💪');
-                if (result) {
-                    history.back();
-                } else {
-                    history.back();
-                }
-                urlChanges = 0;
+                let alertBox = document.createElement('div');
+alertBox.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+let alertContainer = document.createElement('div');
+alertContainer.style.cssText = `
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+`;
+
+let alertMessage = document.createTextNode('🤖 You are changing pages too fast. Please slow down and focus 🧠💪');
+let okButton = document.createElement('button');
+okButton.textContent = 'OK';
+let cancelButton = document.createElement('button');
+cancelButton.textContent = 'Cancel';
+let buttons = [okButton, cancelButton];
+
+function disableButtons() {
+    buttons.forEach(button => {
+        button.disabled = true;
+    });
+    setTimeout(() => {
+        buttons.forEach(button => {
+            button.disabled = false;
+        });
+    }, 5000);
+}
+
+okButton.addEventListener('click', () => {
+    disableButtons();
+    history.back();
+    alertBox.style.display = 'none';
+});
+
+cancelButton.addEventListener('click', () => {
+    disableButtons();
+    alertBox.style.display = 'none';
+});
+
+alertContainer.appendChild(alertMessage);
+alertContainer.appendChild(document.createElement('br'));
+buttons.forEach(button => {
+    alertContainer.appendChild(button);
+});
+alertBox.appendChild(alertContainer);
+document.body.appendChild(alertBox);
+
             }
         }
     } else {
