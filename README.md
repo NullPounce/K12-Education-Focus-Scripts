@@ -55,6 +55,8 @@
 
 
 # Tampermonkey Anti Rushing Script (with a time out :)
+
+- UPDATE: Go-Back-URL-Alert-Counter.txt is now more accurate and the cancel button closes but still counts towards it counting it, over 100+ lines of code, i'll clean this up if i see any stars, traffic etc enjoy
 ![2023-02-15-11-06-25](https://user-images.githubusercontent.com/28081004/219085743-2d2b2c7e-4fbb-47f1-9ebf-2296622116a4.gif)
 
 the match line currently sets this to work on all sites for you're student
