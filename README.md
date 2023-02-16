@@ -16,7 +16,7 @@
   <h3 align="center">Anti Rush School Focus Scripts</h3>
 
   <p align="center">
-    anti rushing and focus scripts for K12 🧠💪⌚️ (working out some consistency bugs)
+    anti rushing and focus scripts for K12 🧠💪⌚️
     <br />
     <a href="https://github.com/NullPounce/K12-Education-Focus-Scripts/releases">View Release</a>
     ·
