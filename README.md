@@ -10,7 +10,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/NullPounce/K12-Education-Focus-Scripts">
-    <img src="https://github.com/NullPounce/K12-Education-Focus-Scripts/blob/main/ezgif-5-90a6697098.gif" alt="Logo" width="150" height="150">
+    <img src="https://github.com/NullPounce/K12-Education-Focus-Scripts/blob/main/ezgif-5-46c3b0ac9a.gif?raw=true"
   </a>
 
   <h3 align="center">Anti Rush School Focus Scripts</h3>
